@@ -3,6 +3,7 @@ import Fastify from "fastify";
 import cors from '@fastify/cors'
 import { prisma } from './lib/prisma'
 import { appRoutes } from "./routes";
+import './lib/dayjs';
 
 const app = Fastify();
 const port = (process.env.PORT || 3333)
