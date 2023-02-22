@@ -3,7 +3,7 @@ import { PrismaClient } from '@prisma/client'
 const prisma = new PrismaClient()
 
 const firstHabitId = '0730ffac-d039-4194-9571-01aa2aa0efbd'
-const firstHabitCreationDate = new Date('2023-02-10T03:00:00.000')
+const firstHabitCreationDate = new Date('2023-02-20T03:00:00.000')
 
 
 async function run() {
@@ -36,7 +36,7 @@ async function run() {
     prisma.day.create({
       data: {
         
-        date: new Date('2023-02-11T03:00:00.000z'),
+        date: new Date('2023-02-20T03:00:00.000z'),
         DayHabits: {
           create: {
             habit_id: firstHabitId,

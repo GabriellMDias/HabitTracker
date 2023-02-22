@@ -1,7 +1,10 @@
 import { Header } from './components/Header'
 import { SummaryTable } from './components/SummaryTable'
 import './styles/global.css'
-//import './lib/dayjs'
+import dayjs from 'dayjs'
+import 'dayjs/locale/pt-br'
+
+dayjs.locale('pt-br')
 
 
 export function App() {

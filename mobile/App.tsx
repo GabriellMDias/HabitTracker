@@ -1,4 +1,3 @@
-import './src/lib/dayjs';
 import { StatusBar } from 'react-native';
 import {
   useFonts,
@@ -9,6 +8,10 @@ import {
 } from '@expo-google-fonts/inter'
 import { Loading } from './src/components/Loading';
 import { Routes } from './src/routes'; //Padrão carrega o index
+import dayjs from 'dayjs'
+import 'dayjs/locale/pt-br'
+
+dayjs.locale('pt-br');
 
 export default function App() {
   const [fontsLoaded] = useFonts({
